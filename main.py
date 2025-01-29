@@ -1,7 +1,6 @@
 import osxphotos
-import pprint
 
-# Initialize variable with the photo library
+# Initialize variable with the photo library object
 photo_library = osxphotos.PhotosDB()
 
 # Initialize variable with all photos from that library
@@ -23,6 +22,6 @@ for photo in all_photos[:50]:
 # print(len(photo_dict))
 
 for photo, photo_info in photo_dict.items():
-    print(f"Photo: {photo}  | File Name: {photo_info['file_name']}  | Date Taken: {photo_info['date_taken']}  | Current Path: {photo_info['current_path']}\n")
+    print(f"Photo: {photo}\n, File Name: {photo_info['file_name']}\n, Date Taken: {photo_info['date_taken']}\n, Current Path: {photo_info['current_path']}\n")
 
 
